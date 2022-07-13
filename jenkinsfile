@@ -17,6 +17,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 sh 'pwd'
+                sh 'cp /root/.jenkins/jobs/javadeploy/workspace/target/java-hello-world.war /root/apache-tomcat-10.0.22/webapps'
             }
         }
     }
